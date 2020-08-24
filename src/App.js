@@ -1,11 +1,12 @@
 import React from "react";
 import style from "./App.module.scss";
-import { connect } from "react-redux";
+import {SignUpPage} from 'components/pages';
 
 function App() {
-  return <div className={style.rock}>Lets Rock! 🤘</div>;
+  return <div className={style.rock}>
+    <SignUpPage />
+  </div>;
 }
-const mapDispatch = (dispatch) => ({});
-const mapState = (state) => ({});
 
-export default connect(mapState, mapDispatch)(App);
+
+export default App;
